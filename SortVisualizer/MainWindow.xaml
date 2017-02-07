@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:SortVisualizer"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
-        Title="Sort Visualizer" Height="350" Width="525">
+        Title="Sort Visualizer" Height="655.063" Width="1077.894" ResizeMode="NoResize" Loaded="MetroWindow_Loaded">
     <Grid>
-        <Canvas Margin="10,10,10,132" Background="Black"/>
+        <Canvas x:Name="canvas" Margin="10,10,10,132" Background="Black"/>
         <GroupBox x:Name="groupBox" Header="Settings" Margin="10,0,10,10" VerticalAlignment="Bottom" Height="117">
             <Grid Margin="0">
                 <ComboBox x:Name="boxSortAlgorithm" HorizontalAlignment="Left" VerticalAlignment="Top" Width="195" controls:TextBoxHelper.Watermark="Sort Algorithm" Margin="10,10,0,0"/>
-                <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="320,9,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="320,9,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click"/>
                 <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="400,9,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
-                <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="400,41,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="400,41,0,0" VerticalAlignment="Top" Width="75" Click="btnReset_Click"/>
                 <Slider x:Name="slider" HorizontalAlignment="Left" Margin="58,47,0,0" VerticalAlignment="Top" Width="147"/>
                 <Label x:Name="label" Content="Speed" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
             </Grid>

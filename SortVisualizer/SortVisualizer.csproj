@@ -67,7 +67,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="SignalGenerator.cs" />
+    <Compile Include="Algorithm\BubbleSort.cs" />
+    <Compile Include="Algorithm\MergeSort.cs" />
+    <Compile Include="Algorithm\QuickSort.cs" />
+    <Compile Include="Algorithm\SortAlgorithm.cs" />
+    <Compile Include="Algorithm\SortWrapper.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Audio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
